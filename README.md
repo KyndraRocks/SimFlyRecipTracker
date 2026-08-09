@@ -2,7 +2,7 @@
 
 A single-file reciprocation-tracking tool for SimFly airport owners. Tracks which pilots have flown to your airports, scores them by how overdue a return visit is, manages a welcome queue for new pilots, and hands off routes to Active Airports for flight planning.
 
-**Current version: v2.61.0**
+**Current version: v2.61.1**
 
 ---
 
@@ -28,7 +28,7 @@ Your pilot/flight data is stored in a private GitHub Gist. On first load, the ap
 
 ## Features
 
-- **Balance Queue** — prioritizes which pilots to fly back to, scored by how overdue and how loyal each pilot is.
+- **Balance Queue** — prioritizes which pilots to fly back to, scored by how overdue and how loyal each pilot is. Its filters — including the date-range slider that sets how far back the queue looks — are remembered between visits.
 - **Quick Entry** — fast logging of inbound flights from your SimFly PAX wallet log.
 - **Welcome Queue** — tracks new pilots who've flown in and haven't been welcomed yet.
 - **Pilot Directory** — searchable roster of every tracked pilot and their airports.
