@@ -2,7 +2,7 @@
 
 A single-file reciprocation-tracking tool for SimFly airport owners. Tracks which pilots have flown to your airports, scores them by how overdue a return visit is, manages a welcome queue for new pilots, and hands off routes to Active Airports for flight planning.
 
-**Current version: v2.68.1**
+**Current version: v2.68.2**
 
 ---
 
@@ -23,6 +23,8 @@ Grab the latest release from the [Releases](https://github.com/KyndraRocks/SimFl
 ## Data & Privacy
 
 Your pilot/flight data is stored in a private GitHub Gist. On first load, the app asks for that Gist's ID and a GitHub Personal Access Token (`gist` scope) to connect. Neither is stored in this app's source code — both live only in your browser's local storage, entered once and (optionally) remembered on your device.
+
+The Gist is the source of truth, so connecting from a new device brings your full history with it. Files of any size are read in full, unreadable Gist data is never treated as empty, and any save that would sharply shrink your stored history is refused rather than written.
 
 ---
 
