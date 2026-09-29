@@ -2,7 +2,7 @@
 
 A single-file reciprocation-tracking tool for SimFly airport owners. Tracks which pilots have flown to your airports, scores them by how overdue a return visit is, manages a welcome queue for new pilots, and hands off routes to Active Airports for flight planning.
 
-**Current version: v2.68.2**
+**Current version: v2.69.0**
 
 ---
 
@@ -40,6 +40,7 @@ The Gist is the source of truth, so connecting from a new device brings your ful
 - **Pilot Directory** — searchable roster of every tracked pilot and their airports.
 - **Dashboard** — reciprocation history, filters, and CSV export.
 - **Wallet** — SimFly PAX payout ledger tracking.
+- **Backup** — one click in the top bar downloads a dated JSON snapshot of every pilot and every inbound and outbound flight, so a copy of your history exists outside GitHub.
 - **Pilot Payouts** — capture and sync payout rates without opening KML Generator.
 - **Aircraft suitability** — pick an aircraft and set its fuel and payload, and every airport in the app is checked against it: an airport only counts as suitable if a single runway is long enough for the aircraft to both land there *and* take off again at that load, with the surface type, SimFly category, and the airport's density altitude all factored in. Hovering any airport code shows the takeoff and landing distances it needs, and says which of the two falls short when an airport doesn't qualify. The Balance Queue can be filtered down to just the pilots you can actually reach.
 - **Plan Flight → Active Airports** — pick a departure/arrival pair and hand the route straight to [Active Airports](https://kyndrarocks.github.io/SimFlyActiveAirports/) for flight planning.
