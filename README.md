@@ -2,7 +2,7 @@
 
 A single-file reciprocation-tracking tool for SimFly airport owners. Tracks which pilots have flown to your airports, scores them by how overdue a return visit is, manages a welcome queue for new pilots, and hands off routes to Active Airports for flight planning.
 
-**Current version: v2.70.0**
+**Current version: v2.71.0**
 
 ---
 
@@ -35,11 +35,12 @@ The Gist is the source of truth, so connecting from a new device brings your ful
 - **Opportunity score** (optional) — one 0–100 column answering “who is worth flying to next”. It combines how loudly a relationship asks for attention (visits owed, and how overdue you are) with how likely a return flight is to bring future traffic back (their activity), and it multiplies the two rather than adding them — so a dormant pilot scores near zero however many visits they owe. Hovering a score shows exactly how it was reached, and three sliders, each running 0 to 5, let you steer the balance. The one with the most reach is how harshly to discount pilots who have gone quiet: by default it scales straight in proportion to how much they fly, so an occasional flyer still ranks clearly ahead of an abandoned account, and turning it up separates the steady flyers from the merely occasional — at the maximum, someone flying half as often as a fully active pilot keeps well under a tenth of their score. Each window sets its own bar for what counts as fully active — 14 flights in 7 days, 60 in 30, 180 in 90, or 800 across a career, roughly two a day — and anyone at or above it is treated as equally reachable, so the score concentrates on telling apart the pilots below that line. The other two, how much being owed visits matters against how much being overdue matters, are weighed against each other, so only the balance between them changes the queue. Off by default; the other columns stay raw counts.
 - **Flight history** — expanding a pilot's row draws their whole back-and-forth with you as a chart: inbound visits and your outbound flights on one timeline, thirty days in view at a time and scrollable back through the full history. Hovering anywhere on it snaps a crosshair to the nearest day and reports that date with both counts.
 - **Flight Impact** — after you log a return flight, a panel shows exactly what it changed: before → after for the pilot's outbound count, balance owed, ratio, last-reciprocated date, Opportunity score and position in the queue — a card for each pilot when a flight credits both the departure and arrival owner. If the flight pushes a pilot out of the queue because one of your filters no longer matches them, it says so rather than leaving them to vanish. Reciprocated pilots keep a highlight and a badge on their row for a quarter of an hour so you can find them again.
+- **Organized filters** — the Balance Queue's filter controls are grouped into three labelled cards (who to show, relationship thresholds, and SimFly activity) instead of one crowded run of checkboxes.
 - **Quick Entry** — fast logging of inbound flights from your SimFly PAX wallet log.
 - **Welcome Queue** — tracks new pilots who've flown in and haven't been welcomed yet.
 - **Pilot Directory** — searchable roster of every tracked pilot and their airports.
 - **Dashboard** — reciprocation history, filters, and CSV export.
-- **Same-owner flights count twice** — a flight between two airports owned by the same pilot credits that pilot for both the departure and the arrival. A one-click **Backfill** button in the dashboard adds the missing second credit to flights logged earlier, after a preview you confirm.
+- **Same-owner flights count twice** — a flight between two airports owned by the same pilot credits that pilot for both the departure and the arrival. A one-click **Backfill** button at the top of the dashboard adds the missing second credit to flights logged earlier, after a preview you confirm.
 - **Wallet** — SimFly PAX payout ledger tracking.
 - **Backup** — one click in the top bar downloads a dated JSON snapshot of every pilot and every inbound and outbound flight, so a copy of your history exists outside GitHub.
 - **Pilot Payouts** — capture and sync payout rates without opening KML Generator.
