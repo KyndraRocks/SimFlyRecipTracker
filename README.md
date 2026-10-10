@@ -2,7 +2,7 @@
 
 A single-file reciprocation-tracking tool for SimFly airport owners. Tracks which pilots have flown to your airports, scores them by how overdue a return visit is, manages a welcome queue for new pilots, and hands off routes to Active Airports for flight planning.
 
-**Current version: v2.69.1**
+**Current version: v2.70.0**
 
 ---
 
@@ -39,6 +39,7 @@ The Gist is the source of truth, so connecting from a new device brings your ful
 - **Welcome Queue** — tracks new pilots who've flown in and haven't been welcomed yet.
 - **Pilot Directory** — searchable roster of every tracked pilot and their airports.
 - **Dashboard** — reciprocation history, filters, and CSV export.
+- **Same-owner flights count twice** — a flight between two airports owned by the same pilot credits that pilot for both the departure and the arrival. A one-click **Backfill** button in the dashboard adds the missing second credit to flights logged earlier, after a preview you confirm.
 - **Wallet** — SimFly PAX payout ledger tracking.
 - **Backup** — one click in the top bar downloads a dated JSON snapshot of every pilot and every inbound and outbound flight, so a copy of your history exists outside GitHub.
 - **Pilot Payouts** — capture and sync payout rates without opening KML Generator.
